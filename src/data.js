@@ -1,0 +1,149 @@
+const products = [
+  {
+    id: 1,
+    name: "Apple iMac 27-inch, 1TB HDD, Retina 5K Display",
+    price: 169999,
+    originalPrice: 199999,
+    discount: "15% OFF",
+    rating: 5.0,
+    image:
+      "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Computers%20Peripherals/Desktops/Images/311754_0_p4etiv.png",
+    isBestSeller: true,
+    brand: "Apple",
+  },
+  {
+    id: 2,
+    name: "Apple iPhone 17 Pro Max 256GB",
+    price: 89999,
+    originalPrice: 100000,
+    discount: "10% OFF",
+    rating: 4.8,
+    image:
+      "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/317417_0_7ISiBcc4Y.png?updatedAt=1757529273198",
+    isBestSeller: true,
+    brand: "Apple",
+  },
+  {
+    id: 3,
+    name: "Samsung Galaxy S25 Ultra 512GB",
+    price: 109999,
+    originalPrice: 120000,
+    discount: "8% OFF",
+    rating: 4.9,
+    image:
+      "https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/313337_0_fabi1f.png",
+    isBestSeller: true,
+    brand: "Samsung",
+  },
+  {
+    id: 4,
+    name: "Apple MacBook Pro 14-inch M3 Pro 512GB",
+    price: 199999,
+    originalPrice: 229999,
+    discount: "13% OFF",
+    rating: 4.9,
+    image:
+      "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Computers%20Peripherals/Laptop/Images/302731_hnoewu.png?tr=w-400",
+    isBestSeller: true,
+    brand: "Apple",
+  },
+  {
+    id: 5,
+    name: "Samsung Galaxy Tab S9 Ultra 512GB WiFi",
+    price: 108999,
+    originalPrice: 124999,
+    discount: "12% OFF",
+    rating: 4.7,
+    image:
+      "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/275409_0_jqh8ia.png?tr=w-400",
+    isBestSeller: false,
+    brand: "Samsung",
+  },
+  {
+    id: 6,
+    name: "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
+    price: 29990,
+    originalPrice: 34990,
+    discount: "14% OFF",
+    rating: 4.8,
+    image:
+      "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Communication/Headphones%20And%20Earphones/Images/319023_0_FBVNN-hQOV.png?updatedAt=1758793608627",
+    isBestSeller: true,
+    brand: "Sony",
+  },
+  {
+    id: 7,
+    name: "Apple AirPods Pro 2nd Generation with MagSafe",
+    price: 24900,
+    originalPrice: 26900,
+    discount: "7% OFF",
+    rating: 4.9,
+    image:
+      "https://media-ik.croma.com/prod/https://media.tatacroma.com/301165_0_rmd0hf.png?tr=w-400",
+    isBestSeller: true,
+    brand: "Apple",
+  },
+  {
+    id: 8,
+    name: "Samsung 65-inch Neo QLED 4K Smart TV",
+    price: 174990,
+    originalPrice: 199990,
+    discount: "12% OFF",
+    rating: 4.6,
+    image:
+      "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Entertainment/Television/Images/315370_0_m2julo.png?tr=w-400",
+    isBestSeller: false,
+    brand: "Samsung",
+  },
+  {
+    id: 9,
+    name: "Sony PlayStation 5 Console 825GB SSD",
+    price: 54990,
+    originalPrice: 59990,
+    discount: "8% OFF",
+    rating: 4.9,
+    image:
+      "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/305985_0_PrlpyhdYd.png?updatedAt=1762776825006",
+    isBestSeller: true,
+    brand: "Sony",
+  },
+  {
+    id: 10,
+    name: "Apple Watch Ultra 2 GPS + Cellular 49mm",
+    price: 89900,
+    originalPrice: 99900,
+    discount: "10% OFF",
+    rating: 4.8,
+    image:
+      "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Communication/Wearable%20Devices/Images/317516_0_D4_wyuvxYG.png?updatedAt=1757600981868",
+    isBestSeller: false,
+    brand: "Apple",
+  },
+  {
+    id: 11,
+    name: "Samsung Galaxy Watch 6 Classic 47mm",
+    price: 35999,
+    originalPrice: 41999,
+    discount: "14% OFF",
+    rating: 4.5,
+    image:
+      "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Communication/Wearable%20Devices/Images/316946_0_fmSmQ2JHk.png?updatedAt=1763650370270",
+    isBestSeller: false,
+    brand: "Samsung",
+  },
+  {
+    id: 12,
+    name: "Sony Alpha 7 IV Full Frame Mirrorless Camera",
+    price: 242990,
+    originalPrice: 269990,
+    discount: "10% OFF",
+    rating: 4.9,
+    image:
+      "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Imaging/Camera%20and%20Camcorders/Images/303425_0_Xo4POLg9J.png?updatedAt=1754895228816",
+    isBestSeller: true,
+    brand: "Sony",
+  },
+  
+];
+
+export default products;
