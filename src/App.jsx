@@ -3,7 +3,13 @@ import products from "./data";
 import "./App.css";
 import { useState, useEffect } from "react";
 
+
+
+
+
 function App() {
+
+  
   //BRANDS
   const allBrands = [...new Set(products.map((p) => p.brand))];
 
@@ -29,7 +35,24 @@ function App() {
   }, [cartItems]);
 
   // Wishlist - array of product IDs that are wishlisted
-  const [wishlist, setWishlist] = useState([]);
+  const [wishlist, setWishlist] = useState(() => {
+    const storedWishlist = localStorage.getItem("techstore-wishlist");
+    try{
+      if(storedWishlist){
+      return JSON.parse(storedWishlist);
+    }
+    }
+    catch(error){
+      console.error("Error parsing wishlist from localStorage:", error);
+      return [];
+    }
+    return [];
+    
+  });
+
+  useEffect(() => {
+      localStorage.setItem("techstore-wishlist", JSON.stringify(wishlist));
+    },[wishlist])
 
   // Search - what user types in search box
   const [searchTerm, setSearchTerm] = useState("");
@@ -546,3 +569,6 @@ function App() {
 }
 
 export default App;
+
+
+// https://github.com/santoshkumar7281/tap-project

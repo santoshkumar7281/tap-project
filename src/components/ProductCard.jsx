@@ -53,7 +53,10 @@ export default function ProductCard({
         </div>
 
         {/* Button */}
-        <button className="add-btn" onClick={onAddToCart}>
+        <button className="add-btn" onClick={() => {
+          onAddToCart();
+          alert(`Product ${name} added to cart!`);
+        }}>
           Add to Cart
         </button>
       </div>
