@@ -143,6 +143,18 @@ const products = [
     isBestSeller: true,
     brand: "Sony",
   },
+  {
+    id: 13,
+    name: "Sony Alpha 7 IV Full Frame Mirrorless Camera",
+    price: 242990,
+    originalPrice: 269990,
+    discount: "10% OFF",
+    rating: 4.9,
+    image:
+      "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Imaging/Camera%20and%20Camcorders/Images/303425_0_Xo4POLg9J.png?updatedAt=1754895228816",
+    isBestSeller: true,
+    brand: "Sony",
+  },
   
 ];
 
